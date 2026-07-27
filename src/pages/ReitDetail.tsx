@@ -1,6 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import { reitsData } from '../data/reits';
-import { ArrowLeft, Building2, TrendingUp, Info, Ticket, AlertTriangle } from 'lucide-react';
+import { ArrowLeft, Building2, TrendingUp, Info, Ticket } from 'lucide-react';
 import { ResponsiveContainer, AreaChart, Area, XAxis, YAxis, Tooltip, CartesianGrid } from 'recharts';
 
 export function ReitDetail() {
@@ -118,7 +118,7 @@ export function ReitDetail() {
             </ul>
           </div>
 
-          {/* Casino/Hospitality Spotlight (Conditional) */}
+           {/* Casino/Hospitality Spotlight (Conditional) */}
           {reit.casinoProximity && (
             <div className="bg-brand-secondary text-brand-primary p-5 rounded border border-[#cfa235] relative shadow-sm">
                <div className="relative z-10">
@@ -134,17 +134,6 @@ export function ReitDetail() {
                </div>
             </div>
           )}
-          
-          {/* External Call to Action */}
-          <div className="p-5 bg-slate-50 rounded border border-slate-200">
-            <h4 className="text-xs font-bold text-slate-900 mb-1 uppercase tracking-wider">Ready to Invest?</h4>
-            <p className="text-[10px] text-slate-500 mb-3">Compare brokerage platforms offering access to Bursa Malaysia REITs.</p>
-            <button className="w-full py-1.5 bg-white border border-slate-300 text-slate-700 rounded text-[10px] uppercase font-bold tracking-wider hover:bg-slate-50 transition shadow-sm">
-              View Recommended Brokers
-            </button>
-            <p className="text-[9px] uppercase tracking-widest text-slate-400 mt-2 text-center flex items-center justify-center gap-1"><AlertTriangle className="w-2.5 h-2.5"/> Affiliate Link</p>
-          </div>
-
         </div>
       </div>
     </div>

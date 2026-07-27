@@ -2,7 +2,7 @@
 // Setting up the skeleton for the layout.
 
 import { Link, Outlet, useLocation } from 'react-router-dom';
-import { BarChart3, Building, Home, LayoutDashboard, LineChart, BookOpen, Info, Menu, X } from 'lucide-react';
+import { Building, Home, Newspaper, LineChart, BookOpen, Info, Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { cn } from '../lib/utils';
 
@@ -11,7 +11,7 @@ export function Layout() {
   const location = useLocation();
 
   const navItems = [
-    { name: 'Dashboard', path: '/', icon: LayoutDashboard },
+    { name: 'News & Articles', path: '/', icon: Newspaper },
     { name: 'REIT Directory', path: '/reits', icon: Building },
     { name: 'Hospitality Focus', path: '/sectors/hospitality', icon: Home },
     { name: 'Compare', path: '/compare', icon: LineChart },
@@ -31,7 +31,7 @@ export function Layout() {
                    <span className="text-brand-primary font-bold text-xl">R</span>
                  </div>
                  <span className="font-heading font-bold text-xl tracking-tight text-white">
-                    REIT WATCH <span className="text-brand-secondary">MY</span>
+                    REIT WATCH <span className="text-brand-secondary">MALAYSIA</span>
                  </span>
               </Link>
 

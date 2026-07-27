@@ -96,13 +96,13 @@ export function HospitalityFocus() {
              </ul>
            </div>
 
-           <div className="bg-brand-secondary text-brand-primary text-center p-6 rounded shadow-sm border-b-4 border-[#cfa235]">
-              <Ticket className="w-8 h-8 mx-auto mb-3 opacity-80" />
-              <h3 className="text-sm font-bold uppercase tracking-widest mb-2">Build Your Portfolio</h3>
-              <p className="text-xs text-brand-primary/80 mb-5 leading-relaxed">Gain exposure to premium Malaysian hospitality assets through top brokerage platforms.</p>
-              <button className="w-full py-2 bg-brand-primary text-white text-xs uppercase tracking-widest font-bold rounded hover:bg-brand-primary/90 transition shadow-sm">
-                Open Brokerage Acc
-              </button>
+           <div className="bg-brand-primary text-white text-center p-5 rounded shadow-sm border-t-4 border-brand-secondary">
+              <Ticket className="w-6 h-6 mx-auto mb-2 text-brand-secondary" />
+              <h3 className="text-xs font-bold uppercase tracking-widest mb-1">Analyze Hospitality REITs</h3>
+              <p className="text-[11px] text-slate-300 mb-4 leading-relaxed">Compare yield ratios, gearing, and NAV across top Malaysian hospitality REITs.</p>
+              <Link to="/compare" className="inline-block w-full py-2 bg-brand-secondary text-brand-primary text-xs uppercase tracking-widest font-bold rounded hover:bg-brand-secondary/90 transition shadow-sm">
+                Compare Yields
+              </Link>
            </div>
         </div>
       </div>

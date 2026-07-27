@@ -5,7 +5,8 @@ import { Layout } from './components/Layout';
 import './index.css';
 
 // Pages
-import { Home } from './pages/Home';
+import { News } from './pages/News';
+import { ArticleDetail } from './pages/ArticleDetail';
 import { Directory } from './pages/Directory';
 import { ReitDetail } from './pages/ReitDetail';
 import { HospitalityFocus } from './pages/HospitalityFocus';
@@ -18,7 +19,9 @@ createRoot(document.getElementById('root')!).render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
+          <Route index element={<News />} />
+          <Route path="news" element={<News />} />
+          <Route path="blog/:slug" element={<ArticleDetail />} />
           <Route path="reits" element={<Directory />} />
           <Route path="reits/:id" element={<ReitDetail />} />
           <Route path="sectors/hospitality" element={<HospitalityFocus />} />
